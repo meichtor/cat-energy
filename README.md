@@ -1,2 +1,4 @@
-# cat-energy
-New training project for practice create adaptive layout. 👨‍🎓
+# Cat-Energy Project
+
+*My second project, learning adaptive layout, bem-methodology, scss and workflow with Git&Github.*
+
