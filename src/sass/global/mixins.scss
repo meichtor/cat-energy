@@ -1,0 +1,9 @@
+@mixin list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin img-fluid {
+  max-width: 100%;
+  height: auto;
+}

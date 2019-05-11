@@ -1,0 +1,8 @@
+// Global styles
+@import "./global/normalize.scss";
+@import "./global/variables.scss";
+@import "./global/typography.scss";
+@import "./global/mixins.scss";
+
+// Page blocks
+@import "blocks/header.scss";
