@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 design/
 build/*
 !build/readme.md
@@ -9,24 +8,9 @@ package-lock.json
 .DS_Store
 .idea
 .vscode
-=======
-# Dev.files
-.DS_Store
-.idea
->>>>>>> effed153835467b2fbe6fca306c6c6cdc049c56f
 *.ai
 *.log
 *.pdf
 *.psd
 *.sublime*
-<<<<<<< HEAD
 Thumbs.db
-=======
-css/*.css
-Thumbs.db
-package-lock.json
-
-#Dev.catalogs
-node_modules/
-bower_components
->>>>>>> effed153835467b2fbe6fca306c6c6cdc049c56f
