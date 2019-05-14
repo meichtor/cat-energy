@@ -5,5 +5,11 @@
 @import "./global/mixins.scss";
 @import "./global/base.scss";
 
+// Sevices blocks
+@import "blocks/container.scss";
+
 // Page blocks
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/navigation-list.scss";
+@import "blocks/container.scss";

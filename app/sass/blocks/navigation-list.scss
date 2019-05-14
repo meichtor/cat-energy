@@ -1,0 +1,28 @@
+.navigation-list {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  @include list-reset;
+  background-color: $main-color;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-family: $font-primary;
+    font-size: 20px;
+    line-height: $line-height-secondary;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $primary-text;
+    border-top: 1px solid $border-color;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

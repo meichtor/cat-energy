@@ -1,0 +1,43 @@
+.main-nav {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $mobile-indents;
+  }
+
+  &__logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 191px;
+    padding-top: 11px;
+    padding-bottom: 17px;
+  }
+
+  &__toggle {
+    padding-top: 23px;
+    padding-bottom: 24px;
+    padding-right: 20px;
+    width: 24px;
+    height: 18px;
+    background-color: transparent;
+    background-image: url(../img/icons/burger-button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+  }
+
+  &__button-text--hidden {
+    @include visually-hidden;
+  }
+
+  &__list {
+    padding: 0;
+  }
+}

@@ -4,7 +4,7 @@ $primary-text: #111111;
 $secondary-text: #444444;
 
 $icons-bg: #666666;
-$green-style: #68b738;
+$green-theme: #68b738;
 $border-color: #cdcdcd;
 
 // Fonts
@@ -16,9 +16,16 @@ $font-size-primary: 14px;
 $font-size-secondary: 16px;
 
 $line-height-primary: 18px;
+$line-height-secondary: 20px;
 
 //Device width
 
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
+
+// Indents
+
+$mobile-indents: 0 20px;
+$tables-indents: 0 30px;
+$desktop-indents: 0 40px;

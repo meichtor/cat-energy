@@ -1,1 +1,6 @@
-
+.page-header {
+  width: 100%;
+  min-width: $mobile-width;
+  @include margin-auto;
+  border-bottom: 1px solid $border-color;
+}

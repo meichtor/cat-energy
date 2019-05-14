@@ -8,6 +8,10 @@
   overflow: hidden;
 }
 
+@mixin margin-auto {
+  margin: 0 auto;
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;

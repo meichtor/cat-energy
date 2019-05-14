@@ -9,6 +9,7 @@ html {
   box-sizing: inherit;
 }
 
+// Base style pages
 body {
   margin: 0;
   padding: 0;
@@ -23,11 +24,13 @@ body {
   background-color: $main-color;
 }
 
+// Reset links
 a {
   text-decoration: none;
   color: inherit;
 }
 
+// Full image-size
 img {
   display: block;
   max-width: 100%;
