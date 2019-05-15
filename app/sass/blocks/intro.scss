@@ -1,3 +1,36 @@
 .intro {
-  min-width: $mobile-width;
+  position: relative;
+  text-align: center;
+  background-image: url(../img/index-background-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.intro__heading {
+  margin: 0;
+  padding-top: 29px;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $main-color;
+}
+
+.intro__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-top: 19px;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: $font-size-primary;
+  line-height: 14px;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.intro__picture {
+  margin: 0 auto;
+}
+
+.intro__button {
+  width: 100%;
 }

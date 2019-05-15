@@ -7,9 +7,14 @@
 
 // Sevices blocks
 @import "blocks/container.scss";
+@import "blocks/visually-hidden.scss";
+
+// Components
+@import "blocks/button.scss";
 
 // Page blocks
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/navigation-list.scss";
 @import "blocks/container.scss";
+@import "blocks/intro.scss";
