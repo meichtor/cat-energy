@@ -1,6 +1,7 @@
 .container {
   min-width: $mobile-width;
   max-width: $desktop-width;
-  padding: $mobile-indents 0;
+  padding-left: $mobile-indents;
+  padding-right: $mobile-indents;
   margin: 0 auto;
 }
