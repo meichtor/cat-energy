@@ -1,0 +1,24 @@
+.advantages-list {
+  @include list-reset;
+  margin-bottom: 47px;
+}
+
+.advantages-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.advantages-list__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $green-theme;
+}
+
+.advantages-list__description {
+  margin: 0;
+  max-width: 200px;
+}
