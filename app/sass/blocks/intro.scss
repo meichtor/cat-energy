@@ -4,6 +4,8 @@
 
   text-align: center;
   background-image: url(../img/index-background-mobile.png);
+  background-position: 0 0;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -27,6 +29,10 @@
   line-height: 14px;
   color: $main-color;
   text-transform: uppercase;
+}
+
+.intro__picture {
+  margin: 0 auto;
 }
 
 .intro__button {

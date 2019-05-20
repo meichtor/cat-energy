@@ -45,6 +45,7 @@
     <h1 class="page-main__heading visually-hidden">
       Интернет-магазин Кэт-Энерджи
     </h1>
+
     <section class="intro container">
       <h2 class="intro__heading">
         Функциональное питание для котов
@@ -172,70 +173,81 @@
     </section>
 
     <section class="living-example">
-      <h2 class="living-example__heading">Живой пример</h2>
-      <p class="living-example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-        Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-        этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
+      <div class="container">
+        <h2 class="living-example__heading">Живой пример</h2>
+        <p class="living-example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
 
-      <ul class="living-example__results result-list">
-        <li class="result-list__item">
-          <p class="result-list__value">5 кг</p>
-          <p class="result-list__charachteristic">снижение веса</p>
-        </li>
-        <li class="result-list__item">
-          <p class="result-list__value">60 дней</p>
-          <p class="result-list__charachteristic">потрачено времени</p>
-        </li>
-      </ul>
+        <ul class="living-example__results-list">
+          <li class="living-example__result-item">
+            <b class="living-example__result-value">5 кг</b>
+            <p class="living-example__result-charachteristic">
+              снижение веса</p>
+          </li>
+          <li class="living-example__result-item">
+            <b class="living-example__result-value">60 дней</b>
+            <p class="living-example__result-charachteristic">
+              потрачено времени</p>
+          </li>
+        </ul>
 
-      <b class="living-example__cost">Затраты на питание: 15 000 руб.</b>
+        <b class="living-example__cost">Затраты на питание: 15 000 руб.</b>
 
-      <img class="living-example__picture" src="http://placehold.it/150x100" alt="Живой пример похудения">
+        <img class="living-example__picture" width="320" height="240" src="img/before-mobile.png" alt="Толстый кот">
 
-      <div class="living-example__checker before-after-checker">
-        <label class="before-after-checker__before" for="checker">Было</label>
-        <input class="before-after-checker__checkbox" type="checkbox" name="before-after-checkbox" id="checker">
-        <label class="before-after-checker__after" for="checker">Стало</label>
+        <div class="living-example__switcher">
+          <button class="living-example__button living-example__button--before" type="button">Было</button>
+
+          <div class="living-example__switcher-scale">
+            <input class="living-example__checkbox visually-hidden" type="checkbox" name="living-example-checkbox"
+              id="switcher">
+            <div class="living-example__switcher-toggle"></div>
+          </div>
+
+          <button class="living-example__button living-example__button--after" type="button">Стало</button>
+        </div>
       </div>
     </section>
 
-    <section class="dealers-info">
-      <h2 class="dealers-info__heading">
-        Приглашаем к сотрудничеству дилеров!
-      </h2>
-      <p class="dealers-info__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </p>
-    </section>
-
-    <section class="map">
-      <h2 class="visually-hidden">Мы находимся по адресу</h2>
-      <img class="map__image" src="http://placehold.it/150x100" alt="Магазин Кэт-энерджи по адресу ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург">
-    </section>
-
-    <footer class="page-footer">
-      <img class="page-footer__logo" src="http://placehold.it/150x100" alt="Логотип Кэт-энерджи" />
-      <ul class="page-footer__social-links social-list">
-        <li class="social-list__item">
-          <a href="#">Вконтакте</a>
-        </li>
-        <li class="social-list__item">
-          <a href="#">Инстаграм</a>
-        </li>
-        <li class="social-list__item">
-          <a href="#">Фейсбук</a>
-        </li>
-      </ul>
-
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">Html-Academy</a>
-        <a class="copyright__icon" href="#">Html-Academy</a>
-      </div>
-    </footer>
   </main>
+
+  <section class="dealers-info">
+    <h2 class="dealers-info__heading">
+      Приглашаем к сотрудничеству дилеров!
+    </h2>
+    <p class="dealers-info__address">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </p>
+  </section>
+
+  <section class="map">
+    <h2 class="visually-hidden">Мы находимся по адресу</h2>
+    <img class="map__image" src="http://placehold.it/150x100" alt="Магазин Кэт-энерджи по адресу ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург">
+  </section>
+
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="http://placehold.it/150x100" alt="Логотип Кэт-энерджи" />
+    <ul class="page-footer__social-links social-list">
+      <li class="social-list__item">
+        <a href="#">Вконтакте</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#">Инстаграм</a>
+      </li>
+      <li class="social-list__item">
+        <a href="#">Фейсбук</a>
+      </li>
+    </ul>
+
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="#">Html-Academy</a>
+      <a class="copyright__icon" href="#">Html-Academy</a>
+    </div>
+  </footer>
   <script src="js/script.min.js"></script>
 </body>
 

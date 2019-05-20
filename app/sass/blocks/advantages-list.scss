@@ -1,11 +1,11 @@
 .advantages-list {
   @include list-reset;
-  margin-bottom: 47px;
 }
 
 .advantages-list__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -20,5 +20,5 @@
 
 .advantages-list__description {
   margin: 0;
-  max-width: 200px;
+  max-width: 71%;
 }
