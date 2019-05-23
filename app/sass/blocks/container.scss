@@ -4,4 +4,14 @@
   padding-left: $mobile-indents;
   padding-right: $mobile-indents;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-indents;
+    padding-right: $tablet-indents;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-indents;
+    padding-right: $desktop-indents;
+  }
 }

@@ -1,6 +1,8 @@
 .page-header {
   width: 100%;
-  min-width: $mobile-width;
-  margin: 0 auto;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
 }

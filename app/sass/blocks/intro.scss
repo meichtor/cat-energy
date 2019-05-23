@@ -5,8 +5,14 @@
   text-align: center;
   background-image: url(../img/index-background-mobile.png);
   background-position: 0 0;
-  background-size: contain;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    text-align: left;
+  }
 }
 
 .intro__heading {
@@ -17,25 +23,56 @@
   font-size: 36px;
   line-height: 36px;
   color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    color: $primary-text;
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 510px;
+    padding-left: 87px;
+    padding-top: 37px;
+  }
 }
 
 .intro__slogan {
   margin: 0;
   margin-bottom: 29px;
-  padding-top: 23px;
+  padding-top: 25px;
   font-family: $font-primary;
   font-weight: 400;
   font-size: $font-size-primary;
   line-height: 14px;
   color: $main-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $primary-text;
+    font-size: ($font-size-primary + 6);
+    line-height: $line-height-secondary;
+    padding-left: 88px;
+    padding-top: 40px;
+  }
 }
 
 .intro__picture {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .intro__button {
   width: 100%;
-  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 34%;
+    margin-top: 15px;
+    margin-left: 90px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+
+    font-size: ($font-size-primary + 6);
+    line-height: $line-height-secondary;
+  }
 }

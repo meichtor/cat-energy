@@ -1,14 +1,25 @@
 .main-nav {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 55px;
+  }
 }
 
 .main-nav__wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 16px;
 }
 
@@ -16,17 +27,27 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 191px;
+  min-width: 191px;
+}
+
+.main-nav__logo-title {
+  padding-top: 7px;
 }
 
 .main-nav__toggle {
-  padding: 20px;
+  margin-top: 5px;
+  padding: 10px;
   width: 24px;
   height: 18px;
+
   background-color: transparent;
   background-image: url(../img/icons/burger-button.svg);
-  background-position: 100% 50%;
   background-repeat: no-repeat;
+  background-position: 0 0;
   border: 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
