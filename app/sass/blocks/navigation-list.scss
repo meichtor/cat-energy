@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   @include list-reset;
-  background-color: $main-color;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -50,9 +49,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    // color: $main-color;
+    color: $main-color;
     font-size: ($font-size-primary + 6);
-
   }
 
   &:hover {
@@ -83,7 +81,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      // border-color: $main-color;
+      border-color: $main-color;
     }
   }
 }

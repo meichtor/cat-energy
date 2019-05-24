@@ -3,15 +3,15 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
-    padding-bottom: 55px;
+    padding-top: 43px;
+    padding-bottom: 45px;
   }
 }
 
@@ -30,8 +30,25 @@
   min-width: 191px;
 }
 
-.main-nav__logo-title {
-  padding-top: 7px;
+.main-nav__logo-icon {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-picture {
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .main-nav__toggle {
