@@ -17,20 +17,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 600px;
+    position: static;
+    min-height: 602px;
 
     // Bg for desktop
     &::before {
       content: '';
       position: absolute;
-      top: -29%;
-      right: -70px;
-      width: 720px;
-      height: 696px;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 72%;
       z-index: -2;
 
       background-color: $green-theme;
       background-image: url(../img/index-background-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -97,8 +100,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -5%;
-    left: 38%;
+    top: 15%;
+    left: 39%;
     min-width: 552px;
     height: 499px;
     z-index: -1;
