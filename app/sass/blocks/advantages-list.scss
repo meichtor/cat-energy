@@ -1,24 +1,116 @@
 .advantages-list {
+  display: flex;
+  flex-direction: column;
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .advantages-list__item {
+  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -27px;
+    right: 91px;
+    z-index: -1;
+
+    font-family: $font-primary;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+  }
+
+
+
+  @media (min-width: $tablet-width) {
+    width: 46%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 135px;
+
+    &--one::after {
+      content: '1';
+    }
+
+    &--two::after {
+      content: '2';
+      right: 80px;
+    }
+
+    &--three::after {
+      content: '3';
+      right: 80px;
+    }
+
+    &--four::after {
+      content: '4';
+      right: 73px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+
+    &--one::after {
+      content: '1';
+      right: 10px;
+    }
+
+    &--two::after {
+      content: '2';
+      right: 0;
+    }
+
+    &--three::after {
+      content: '3';
+      right: 0;
+    }
+
+    &--four::after {
+      content: '4';
+      right: -5px;
+    }
+  }
 }
 
 .advantages-list__illustration {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   background-color: $green-theme;
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+  }
 }
 
 .advantages-list__description {
   margin: 0;
-  max-width: 71%;
+  flex-basis: 71%;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-secondary;
+    line-height: ($line-height-secondary + 4);
+    max-width: 80%;
+    padding-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }

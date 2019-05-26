@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 22px;
   text-align: center;
-  background-image: url(../img/index-background-mobile.jpg);
+  background-image: url(../img/index-background-mobile@1x.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
 
@@ -27,12 +27,13 @@
       top: 0;
       right: 0;
       width: 50%;
-      height: 72%;
+      height: 694px;
       z-index: -2;
 
       background-color: $green-theme;
-      background-image: url(../img/index-background-desktop.jpg);
+      background-image: url(../img/index-background-desktop@1x.jpg);
       background-repeat: no-repeat;
+      background-position: left center;
       background-size: cover;
     }
   }
@@ -110,6 +111,7 @@
 
 .intro__button {
   width: 100%;
+  margin-top: 4px;
 
   @media (min-width: $tablet-width) {
     width: 34%;
