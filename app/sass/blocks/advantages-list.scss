@@ -20,7 +20,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: -27px;
     right: 91px;
     z-index: -1;
@@ -31,8 +31,6 @@
     color: #f2f2f2;
   }
 
-
-
   @media (min-width: $tablet-width) {
     width: 46%;
     flex-direction: column;
@@ -41,45 +39,46 @@
     margin-bottom: 135px;
 
     &--one::after {
-      content: '1';
+      content: "1";
     }
 
     &--two::after {
-      content: '2';
+      content: "2";
       right: 80px;
     }
 
     &--three::after {
-      content: '3';
+      content: "3";
       right: 80px;
     }
 
     &--four::after {
-      content: '4';
+      content: "4";
       right: 73px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 20%;
+    margin-bottom: 119px;
 
     &--one::after {
-      content: '1';
+      content: "1";
       right: 10px;
     }
 
     &--two::after {
-      content: '2';
+      content: "2";
       right: 0;
     }
 
     &--three::after {
-      content: '3';
+      content: "3";
       right: 0;
     }
 
     &--four::after {
-      content: '4';
+      content: "4";
       right: -5px;
     }
   }
