@@ -6,3 +6,39 @@
   align-items: center;
 }
 
+.socials-list__icon {
+  fill: $icons-bg;
+}
+
+.socials-list__icon--vk {
+  width: 25px;
+  height: 15px;
+  margin-top: 3px;
+  margin-left: -10px;
+
+  @media (min-width: $tablet-width) {
+   width: 35px;
+   height: 21px;
+   margin-left: -30px;
+  }
+}
+
+.socials-list__icon--inst {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+   width: 23px;
+   height: 23px;
+  }
+}
+
+.socials-list__icon--fb {
+  width: 10px;
+  height: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
+}

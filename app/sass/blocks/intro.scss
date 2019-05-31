@@ -4,6 +4,7 @@
   text-align: center;
   background-image: url(../img/index-background-mobile@1x.jpg);
   background-position: 0 0;
+  background-size: 100% 305px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +23,7 @@
 
     // Bg for desktop
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
