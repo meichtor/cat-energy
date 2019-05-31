@@ -6,6 +6,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+
     &::before {
       content: "";
       position: absolute;
