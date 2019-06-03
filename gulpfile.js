@@ -1,8 +1,9 @@
 "use strict";
 
-// Инструменты для работы
+// Assets
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const imagemin = require("gulp-imagemin");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const postcss = require("gulp-postcss");
@@ -15,7 +16,7 @@ const uglify = require("gulp-uglify");
 const del = require("del");
 const server = require("browser-sync").create();
 
-// Сборка CSS из SCSS
+// Scss
 gulp.task("css", function() {
   return gulp
     .src("app/sass/main.scss")
@@ -42,7 +43,7 @@ gulp.task("css", function() {
     .pipe(server.stream());
 });
 
-// Сборка HTML
+// HTML
 gulp.task("html", function() {
   return gulp
     .src("app/*.html")
@@ -50,24 +51,33 @@ gulp.task("html", function() {
     .pipe(gulp.dest("./build"));
 });
 
-// Сборка изображений
+// Images
 gulp.task("img", function() {
   return gulp
     .src(
       ["app/img/**/*.{gif,png,jpg,jpeg,svg}"],
       { since: gulp.lastRun("img") } // оставим в потоке обработки только изменившиеся от последнего запуска задачи файлы
     )
+    .pipe(
+      imagemin([
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.jpegtran({ progressive: true }),
+        imagemin.svgo()
+      ])
+    )
     .pipe(plumber())
     .pipe(newer("./build/img")) // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
     .pipe(gulp.dest("./build/img"));
 });
 
-// Сборка шрифтов
+// Fonts
 gulp.task("fonts", function() {
-  return gulp.src("app/fonts/**/*.{woff,woff2}").pipe(gulp.dest("build/fonts"));
+  return gulp
+    .src("app/fonts/**/*.{woff,woff2}")
+    .pipe(gulp.dest("./build/fonts"));
 });
 
-// Сборка Javascript
+// Javascript
 gulp.task("js", function() {
   return gulp
     .src("app/js/script.js")
@@ -76,25 +86,21 @@ gulp.task("js", function() {
     .pipe(gulp.dest("./build/js"))
     .pipe(rename("script.min.js"))
     .pipe(uglify())
-    .pipe(gulp.dest("./build/js"))
-    .pipe(server.reload({ stream: true }));
+    .pipe(gulp.dest("./build/js"));
 });
 
-// Очистка папки build
+// Clean build task
 gulp.task("clean", function() {
-  return del([
-    "build/**/*", // все файлы из папки сборки
-    "!build/readme.md" // кроме readme.md
-  ]);
+  return del(["build/**/*", "!build/readme.md"]);
 });
 
-//Общая сборка всего
+//Build all
 gulp.task(
   "build",
   gulp.series("clean", gulp.parallel("css", "img", "js", "fonts"), "html")
 );
 
-// Локальный сервер + отслеживание изменений
+// Local server + watching
 gulp.task("server", function() {
   server.init({
     server: "./build",
@@ -110,11 +116,11 @@ gulp.task("server", function() {
   gulp.watch("app/*.html", gulp.series("html", reload));
 });
 
-// Перезагрузка HTML
+// Reload HTML
 function reload(done) {
   server.reload();
   done();
 }
 
-//  Запускаем делаем сборку, запускаем сервер и следим
+//  Start
 gulp.task("default", gulp.series("build", "server"));
