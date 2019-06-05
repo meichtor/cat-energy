@@ -1,5 +1,9 @@
 .contacts {
   position: relative;
+
+  &--catalog {
+    margin-top: 32px;
+  }
 }
 
 .contacts__info {
@@ -9,6 +13,10 @@
   padding-top: 30px;
   padding-bottom: 26px;
   background-color: $main-color;
+
+  &--catalog {
+    background-color: #f2f2f2;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 62px;

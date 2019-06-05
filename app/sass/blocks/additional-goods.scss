@@ -1,0 +1,42 @@
+.additional-goods {
+  margin-bottom: 55px;
+}
+
+.additional-goods__heading {
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: $mobile-indents;
+  padding-right: 55px;
+  font-family: $font-primary;
+  font-size: ($font-size-secondary + 6);
+  font-weight: 400;
+  line-height: ($line-height-secondary + 4);
+  color: $primary-text;
+  letter-spacing: 0.8px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 57px;
+    min-width: 280px;
+    height: 1px;
+
+    background-color: $border-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: $green-theme;
+  }
+}
+
+.additional-goods__wrapper {
+  margin-top: 48px;
+}

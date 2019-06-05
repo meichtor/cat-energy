@@ -1,0 +1,24 @@
+.gift__wrapper {
+  min-height: 290px;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.gift__icon {
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.gift__description {
+  display: inline-flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0;
+  color: $main-color;
+
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+}

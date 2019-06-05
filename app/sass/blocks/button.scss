@@ -13,4 +13,8 @@
 
   border: 0;
   cursor: pointer;
+
+  &--full-width {
+    width: 100%;
+  }
 }

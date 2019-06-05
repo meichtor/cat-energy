@@ -1,0 +1,4 @@
+.product-list {
+  @include list-reset;
+  background-color: $main-color;
+}
