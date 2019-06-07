@@ -45,15 +45,16 @@
 
         <ul class="navigation-list">
           <li class="navigation-list__item">
-            <a class="navigation-list__link navigation-list__link--active">Главная</a>
+            <a class="navigation-list__link navigation-list__link--black" href="index.html">Главная</a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">
+            <a class="navigation-list__link navigation-list__link--black navigation-list__link--active-black"
+              href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">
+            <a class="navigation-list__link navigation-list__link--black" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -64,308 +65,317 @@
     <main class="page-main">
       <h1 class="page-main__heading">Каталог продукции</h1>
 
-      <ul class="product-list">
+      <ul class="product-list container">
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/chicken-small-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 500 грамм со вкусом курицы">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
+                <img class="product-item__image" src="img/chicken-small-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 500 грамм со вкусом курицы">
+              </picture>
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy PRO 500 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    500 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Курица
-                  </dd>
-                  <dd class="product-item__value">
-                    700 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  500 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Курица
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  700 Р.
+                </dd>
               </dl>
             </div>
           </div>
 
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/chicken-big-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 1000 грамм со вкусом курицы">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
+                <img class="product-item__image" src="img/chicken-big-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 1000 грамм со вкусом курицы">
+              </picture>
+
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy PRO 1000 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    1000 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Курица
-                  </dd>
-                  <dd class="product-item__value">
-                    1000 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  1000 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Курица
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  1000 Р.
+                </dd>
               </dl>
             </div>
           </div>
-
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/fish-small-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 500 грамм со вкусом рыбы">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
+                <img class="product-item__image" src="img/fish-small-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 500 грамм со вкусом рыбы">
+              </picture>
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy PRO 500 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    500 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Рыба
-                  </dd>
-                  <dd class="product-item__value">
-                    700 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  500 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Рыба
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  700 Р.
+                </dd>
               </dl>
             </div>
           </div>
-
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/fish-big-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 1000 грамм со вкусом рыбы">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
+                <img class="product-item__image" src="img/fish-big-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 1000 грамм со вкусом рыбы">
+              </picture>
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy PRO 1000 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    1000 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Рыба
-                  </dd>
-                  <dd class="product-item__value">
-                    1000 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  1000 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Рыба
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  1000 Р.
+                </dd>
               </dl>
             </div>
           </div>
 
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/buckwheat-small-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 500 грамм со вкусом гречки">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                <img class="product-item__image" src="img/buckwheat-small-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 500 грамм со вкусом гречки">
+              </picture>
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy PRO 500 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    500 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Гречка
-                  </dd>
-                  <dd class="product-item__value">
-                    400 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  500 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Гречка
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  400 Р.
+                </dd>
               </dl>
             </div>
           </div>
 
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/buckwheat-big-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 1000 грамм со вкусом гречки">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
+                <img class="product-item__image" src="img/buckwheat-big-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 1000 грамм со вкусом гречки">
+              </picture>
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy PRO 1000 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    1000 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Гречка
-                  </dd>
-                  <dd class="product-item__value">
-                    700 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  1000 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Гречка
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  700 Р.
+                </dd>
               </dl>
             </div>
           </div>
-
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-list__item">
           <div class="product-item__wrapper">
             <a href="#" class="product-item__link">
-              <img class="product-item__image" src="img/rice-small-mobile@1x.jpg"
-                alt="Кэт-энерджи Pro 500 грамм со вкусом риса">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
+                <img class="product-item__image" src="img/rice-small-mobile@1x.jpg"
+                  alt="Кэт-энерджи Pro 500 грамм со вкусом риса">
+              </picture>
             </a>
 
             <div class="product-item__info">
               <h2 class="product-item__heading">Cat Energy SLIM 500 г</h2>
               <dl class="product-item__characteristics">
-                <div class="product-item__name-wrapper">
-                  <dt class="product-item__name">
-                    Объём
-                  </dt>
-                  <dt class="product-item__name">
-                    Вкус
-                  </dt>
-                  <dt class="product-item__name">
-                    Цена
-                  </dt>
-                </div>
-
-                <div class="product-item__value-wrapper">
-                  <dd class="product-item__value">
-                    500 г
-                  </dd>
-                  <dd class="product-item__value">
-                    Рис
-                  </dd>
-                  <dd class="product-item__value">
-                    500 Р.
-                  </dd>
-                </div>
+                <dt class="product-item__name">
+                  Объём
+                </dt>
+                <dd class="product-item__value">
+                  500 г
+                </dd>
+                <dt class="product-item__name">
+                  Вкус
+                </dt>
+                <dd class="product-item__value">
+                  Рис
+                </dd>
+                <dt class="product-item__name">
+                  Цена
+                </dt>
+                <dd class="product-item__value">
+                  500 Р.
+                </dd>
               </dl>
             </div>
           </div>
 
-          <button class="button product-item__button" type="button">
-            Заказать
-          </button>
+          <div class="product-item__button-wrapper">
+            <button class="button product-item__button" type="button">
+              Заказать
+            </button>
+          </div>
         </li>
 
         <li class="product-item product-item--more product-list__item">
-          <h2 class="product-item__heading product-item__heading--full-width">Показать еще 100500 товаров</h2>
-          <p class="product-item__desc">На самом деле вкусов гораздо больше!</p>
-          <button class="button product-item__button product-item__button--gray" type="button">
-            Показать все
-          </button>
+          <div class="product-item__wrapper product-item__wrapper--more">
+            <h2 class="product-item__heading product-item__heading--more">Показать
+              еще
+              100500 товаров</h2>
+            <p class="product-item__desc">На самом деле вкусов гораздо больше!</p>
+            <button class="button product-item__button product-item__button--gray" type="button">
+              Показать все
+            </button>
+          </div>
         </li>
       </ul>
 

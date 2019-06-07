@@ -8,4 +8,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-left: $tablet-indents;
+    padding-top: 36px;
+    padding-bottom: 0;
+    margin-bottom: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-top: 20px;
+  }
 }

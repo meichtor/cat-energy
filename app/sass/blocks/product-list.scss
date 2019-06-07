@@ -1,4 +1,14 @@
 .product-list {
-  @include list-reset;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
   background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
