@@ -74,22 +74,17 @@
     content: "";
     position: absolute;
     top: 32px;
-    left: calc(width - 50%);
 
     width: 92%;
-    border-bottom: 2px solid $green-theme;
+    border-bottom: 2px solid $main-color;
 
     @media (min-width: $tablet-width) {
       display: block;
     }
-
-    @media (min-width: $desktop-width) {
-      border-color: $main-color;
-    }
   }
 }
 
-.navigation-list__link--active-black {
+.navigation-list__link--active-green {
   position: relative;
 
   &::after {
@@ -97,17 +92,12 @@
     content: "";
     position: absolute;
     top: 32px;
-    left: calc(width - 50%);
 
     width: 92%;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $green-theme;
 
     @media (min-width: $tablet-width) {
       display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-color: #000000;
     }
   }
 }

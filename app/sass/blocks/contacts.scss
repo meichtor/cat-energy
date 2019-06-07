@@ -3,6 +3,15 @@
 
   &--catalog {
     margin-top: 32px;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -16,6 +25,10 @@
 
   &--catalog {
     background-color: #f2f2f2;
+
+    @media (min-width: $desktop-width) {
+      background-color: $main-color;
+    }
   }
 
   @media (min-width: $tablet-width) {
