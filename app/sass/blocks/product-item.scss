@@ -261,13 +261,6 @@
   @media (min-width: $desktop-width) {
     width: 70%;
   }
-
-  &--gray {
-    font-size: ($font-size-primary + 2);
-    background-color: #f2f2f2;
-    color: $secondary-text;
-    letter-spacing: 0;
-  }
 }
 
 .product-item__button-wrapper {

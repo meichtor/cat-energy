@@ -21,7 +21,7 @@
   }
 }
 
-.living-example__container {
+.living-example__wrapper {
   background-color: #f2f2f2;
   padding-bottom: 1px;
 
@@ -407,6 +407,14 @@
   border-radius: 50%;
   background-color: $main-color;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid #68b738;
+  }
 
   &::before {
     content: "";

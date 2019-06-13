@@ -84,7 +84,6 @@
     height: 100px;
     margin-left: 0;
   }
-
 }
 
 .mode__picture {
@@ -166,6 +165,16 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  &:hover {
+    .mode__link-icon {
+      width: 33px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 62px;
   }
@@ -190,3 +199,12 @@
   }
 }
 
+.mode__link-icon {
+  width: 24px;
+  height: 11px;
+
+  &:hover {
+    width: 33px;
+    height: 11px;
+  }
+}

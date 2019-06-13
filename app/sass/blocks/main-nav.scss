@@ -39,6 +39,18 @@
 .main-nav__logo-picture {
   padding-top: 12px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 2px;
     width: 173px;

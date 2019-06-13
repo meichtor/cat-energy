@@ -8,6 +8,19 @@
 
 .socials-list__icon {
   fill: $icons-bg;
+
+  &:hover {
+    fill: $green-theme;
+  }
+
+  &:focus {
+    fill: $green-theme;
+  }
+
+  &:active {
+    fill: $green-theme;
+    opacity: 0.3;
+  }
 }
 
 .socials-list__icon--vk {
@@ -17,9 +30,9 @@
   margin-left: -10px;
 
   @media (min-width: $tablet-width) {
-   width: 35px;
-   height: 21px;
-   margin-left: -30px;
+    width: 35px;
+    height: 21px;
+    margin-left: -30px;
   }
 }
 
@@ -28,8 +41,8 @@
   height: 16px;
 
   @media (min-width: $tablet-width) {
-   width: 23px;
-   height: 23px;
+    width: 23px;
+    height: 23px;
   }
 }
 

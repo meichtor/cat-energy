@@ -6,6 +6,14 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__wrapper {
@@ -76,6 +84,14 @@
 .page-footer__copyright-link {
   font-size: $font-size-secondary;
   line-height: $line-height-primary - 2;
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-link--upper {
@@ -88,4 +104,18 @@
   height: 40px;
   margin-top: -5px;
   margin-right: -5px;
+  fill: #666666;
+
+  &:hover {
+    fill: $green-theme;
+  }
+
+  &:focus {
+    fill: $green-theme;
+  }
+
+  &:active {
+    fill: $green-theme;
+    opacity: 0.3;
+  }
 }
