@@ -114,6 +114,18 @@
     background-image: url(../img/bg-map-desktop@1x.png);
   }
 
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi) {
+    background-image: url(../img/bg-map-desktop@2x.png);
+  }
+
+  @media (max-width: $desktop-width - 1) and (min-resolution: $retina-dpi) {
+    background-image: url(../img/bg-map-tablet@2x.png);
+  }
+
+  @media (max-width: $tablet-width - 1) and (min-resolution: $retina-dpi) {
+    background-image: url(../img/bg-map-mobile@2x.png);
+  }
+
   &::before {
     position: absolute;
     top: calc(50% - 41px);
