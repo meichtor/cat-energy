@@ -59,7 +59,6 @@ gulp.task("img", function() {
       { since: gulp.lastRun("img") } // оставим в потоке обработки только изменившиеся от последнего запуска задачи файлы
     )
     .pipe(plumber())
-    .pipe(newer("./build/img")) // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
     .pipe(
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
@@ -67,6 +66,7 @@ gulp.task("img", function() {
         imagemin.svgo()
       ])
     )
+    .pipe(newer("./build/img")) // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
     .pipe(gulp.dest("./build/img"));
 });
 
