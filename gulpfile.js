@@ -4,6 +4,8 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
+const pngquant = require("imagemin-pngquant");
+const svgstore = require("gulp-svgstore");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const postcss = require("gulp-postcss");
@@ -58,13 +60,29 @@ gulp.task("img", function() {
     .pipe(plumber())
     .pipe(newer("./build/img"))
     .pipe(
-      imagemin([
-        imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.jpegtran({ progressive: true }),
-        imagemin.svgo()
-      ])
+      imagemin({
+        optimizationLevel: 3,
+        progressive: true,
+        interlaced: true,
+        svgoPlugins: [{ removeViewBox: false }],
+        use: [pngquant()]
+      })
     )
     .pipe(gulp.dest("./build/img"));
+});
+
+// Svg
+gulp.task("svg", function() {
+  return gulp
+    .src(["app/img/icons/**/*.svg"])
+    .pipe(
+      imagemin({
+        svgoPlugins: [{ removeViewBox: false }]
+      })
+    )
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("./build/img/icons"));
 });
 
 // Fonts
@@ -94,7 +112,11 @@ gulp.task("clean", function() {
 //Build all
 gulp.task(
   "build",
-  gulp.series("clean", gulp.parallel("css", "img", "js", "fonts"), "html")
+  gulp.series(
+    "clean",
+    gulp.parallel("css", "img", "svg", "js", "fonts"),
+    "html"
+  )
 );
 
 // Local server + watching

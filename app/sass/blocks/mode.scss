@@ -176,6 +176,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
     margin-bottom: 62px;
   }
 }
